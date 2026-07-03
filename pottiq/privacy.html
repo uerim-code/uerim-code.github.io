@@ -25,26 +25,38 @@
   <p class="meta">Effective date: July 3, 2026 · Last updated: July 3, 2026</p>
   <p>Pottiq ("we", "our", "us") is a smart plant care reminder app developed by Ümit Can Erim. This Privacy Policy explains what information we collect, how we use it, and your rights.</p>
   <h2>1. Information We Collect</h2>
-  <p><strong>Data stored locally on your device (never sent to our servers):</strong></p>
+  <p><strong>Data stored locally on your device (standard mode):</strong></p>
   <ul>
     <li>Plant profiles (name, type, pot material, soil type, watering schedule)</li>
     <li>Plant photos (stored on-device)</li>
     <li>Watering logs and health records</li>
     <li>App settings and subscription status</li>
   </ul>
-  <p>Pottiq does <strong>not</strong> collect your name, email address, location, or any personally identifiable information.</p>
+  <p><strong>Data synced to our servers (Caregiver Mode only):</strong></p>
+  <p>If you enable the Caregiver feature, the following data is securely synced to Supabase-hosted servers so your caregiver can view and act on your plants:</p>
+  <ul>
+    <li>Plant profiles assigned to the caregiver</li>
+    <li>Watering activity logs (who watered, when)</li>
+    <li>Invite codes (time-limited, auto-expire after 24 hours)</li>
+    <li>An anonymous session identifier for the caregiver (no name, email, or phone required)</li>
+  </ul>
+  <p>All data in transit is encrypted using <strong>TLS 1.3</strong>. Data at rest is encrypted using <strong>AES-256</strong> by Supabase. You can revoke caregiver access at any time, which immediately removes the caregiver's ability to see your plants.</p>
+  <p>Pottiq does <strong>not</strong> collect your location or financial information.</p>
   <h2>2. Third-Party Services</h2>
-  <p><strong>Google AdMob</strong> (free users only): Ads are served via Google AdMob. Google may collect device identifiers for ad personalization. See <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+  <p><strong>Supabase</strong> (Caregiver Mode only): When Caregiver Mode is active, plant and activity data is synced via Supabase (supabase.com). Supabase is SOC 2 Type 2 certified. See <a href="https://supabase.com/privacy" target="_blank">Supabase Privacy Policy</a>.</p>
+  <p><strong>Google AdMob</strong> (free users only): Ads are served via Google AdMob. Google may collect device identifiers for ad personalization. See <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>. You can opt out in device settings.</p>
   <p><strong>Apple / Google Play</strong>: Subscriptions are processed by Apple or Google. We do not store payment data.</p>
   <h2>3. Notifications</h2>
-  <p>Pottiq uses local notifications for watering reminders. No data is transmitted externally. Disable in device settings anytime.</p>
+  <p>Pottiq uses local notifications for watering reminders. In Caregiver Mode, push notifications may be routed through Expo's notification service. Disable in device settings anytime.</p>
   <h2>4. Analytics</h2>
   <p>We do not use analytics SDKs. We do not track app usage.</p>
-  <h2>5. Children's Privacy</h2>
+  <h2>5. Data Security</h2>
+  <p>All server communications are encrypted with TLS 1.3. Server-side data is encrypted at rest with AES-256. Access is controlled by Row Level Security policies — caregivers can only see the specific plants they are assigned to.</p>
+  <h2>6. Children's Privacy</h2>
   <p>Pottiq is not directed at children under 13.</p>
-  <h2>6. Data Retention</h2>
-  <p>All data is stored locally. Delete by uninstalling Pottiq.</p>
-  <h2>7. Changes</h2>
+  <h2>7. Data Retention</h2>
+  <p>Local data is deleted by uninstalling Pottiq. Server-side data (Caregiver Mode) can be deleted by contacting us at <a href="mailto:uc.erim@gmail.com">uc.erim@gmail.com</a>.</p>
+  <h2>8. Changes</h2>
   <p>We may update this policy. Continued use means acceptance.</p>
   <div class="contact">
     <strong>Contact</strong><br>
